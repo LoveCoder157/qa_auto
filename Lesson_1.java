@@ -76,7 +76,10 @@ public class Lesson_1 {
         checkSeason(4);
         checkSeason(7);
         checkSeason(10);
-
+        checkSeasonByIf(1);
+        checkSeasonByIf(5);
+        checkSeasonByIf(3);
+        checkSeasonByIf(7);
 //       Task_10
 //       У человека должно быть имя (name, String), возраст (age, int), вес (weight, int), сила (strength, int).
 //        Клас і рішення внизу
@@ -181,6 +184,20 @@ public class Lesson_1 {
             case 12:
                 System.out.println("Зима");
                 break;
+        }
+    }
+    
+    public static void checkSeasonByIf(int numMonth){
+        if (numMonth == 12 || numMonth == 1 || numMonth == 2) {
+            System.out.println("Winter");
+        } else if (numMonth == 3 || numMonth == 4 || numMonth == 5) {
+            System.out.println("Spring");
+        } else if (numMonth == 6 || numMonth == 7 || numMonth == 8) {
+            System.out.println("Summer");
+        } else if (numMonth == 9 || numMonth == 10 || numMonth == 11) {
+            System.out.println("Autumn");
+        } else {
+            System.out.println("Unknown time of the year");
         }
     }
 
